@@ -1,23 +1,24 @@
 // ================= changeing theme =============
 
 const themeBtn = document.querySelector("#theme-btn");
-themeBtn.addEventListener("click", function () {
+const mbThemeBtn = document.querySelector("#mobile-theme");
+themeBtn.addEventListener("click", handleTheme);
+mbThemeBtn.addEventListener("click", handleTheme);
+function handleTheme() {
   const root = getComputedStyle(document.querySelector(":root"));
-  console.log();
   if (root.getPropertyValue("--bg-light") == "white") {
     document.documentElement.style.cssText =
-      "--bg-light: rgb(23, 23, 23); --text-primary: white; --text-theme:#f7f5f5;";
-    themeBtn.innerHTML = `<ion-icon name="sunny-outline"></ion-icon>`;
-    themeBtn.classList.add("sun");
+      "--bg-light: rgb(23, 23, 23); --text-primary: white; --text-theme:rgb(40, 40, 40);";
+    this.innerHTML = `<ion-icon name="sunny-outline"></ion-icon>`;
+    this.classList.add("sun");
   } else {
     document.documentElement.style.cssText =
       "--bg-light: white; --text-primary: black; --text-theme:#e8e8e8;";
-    themeBtn.innerHTML = `<ion-icon name="moon"></ion-icon
+    this.innerHTML = `<ion-icon name="moon"></ion-icon
     >`;
-    themeBtn.classList.remove("sun");
+    this.classList.remove("sun");
   }
-});
-
+}
 // ============ adding style in navigation bar ========
 
 const navItems = document.querySelectorAll(".nav li");
@@ -37,4 +38,15 @@ navItems.forEach((navItem) => {
       }
     });
   });
+});
+
+// mobile navigation bar
+const mbOpenBtn = document.querySelector("#open-btn");
+const mbCloseBtn = document.querySelector("#close-btn");
+const mbNav = document.querySelector(".mobile-nav-bar");
+mbOpenBtn.addEventListener("click", function () {
+  mbNav.classList.add("is-open");
+});
+mbCloseBtn.addEventListener("click", function () {
+  mbNav.classList.remove("is-open");
 });
