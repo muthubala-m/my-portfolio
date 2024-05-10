@@ -6,7 +6,7 @@ themeBtn.addEventListener("click", function () {
   console.log();
   if (root.getPropertyValue("--bg-light") == "white") {
     document.documentElement.style.cssText =
-      "--bg-light: rgb(23, 23, 23); --text-primary: white; --text-theme:#464646;";
+      "--bg-light: rgb(23, 23, 23); --text-primary: white; --text-theme:#f7f5f5;";
     themeBtn.innerHTML = `<ion-icon name="sunny-outline"></ion-icon>`;
     themeBtn.classList.add("sun");
   } else {
