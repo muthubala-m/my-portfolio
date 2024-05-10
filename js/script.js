@@ -6,10 +6,10 @@ themeBtn.addEventListener("click", function () {
   console.log();
   if (root.getPropertyValue("--bg-light") == "white") {
     document.documentElement.style.cssText =
-      "--bg-light: rgb(23, 23, 23); --text-primary: white;";
+      "--bg-light: rgb(23, 23, 23); --text-primary: white; --text-theme:#464646;";
   } else {
     document.documentElement.style.cssText =
-      "--bg-light: white; --text-primary: black;";
+      "--bg-light: white; --text-primary: black; --text-theme:#e8e8e8;";
   }
 });
 
