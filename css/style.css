@@ -120,6 +120,10 @@ body {
   align-items: center;
   gap: 2rem;
 }
+.header-right .sun{
+  color: yellow;
+  font-size: 3rem;
+}
 .mobile-nav {
   display: none;
   font-size: 3rem;
