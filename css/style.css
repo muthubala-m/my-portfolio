@@ -619,29 +619,124 @@ body {
 .about-head div:nth-of-type(1) button {
   color: var(--text-scondry);
 }
-.about-exps{
+.about-exps {
   display: flex;
   gap: 5rem;
   justify-content: space-between;
 }
-.about-exp{
+.about-exp {
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  background:var(--text-theme);
+  background: var(--text-theme);
   border-radius: 1rem;
   align-items: center;
   gap: 1rem;
   width: 40%;
 }
-.about-exp h2{
+.about-exp h2 {
   color: var(--text-scondry);
 }
-.about .expert{
+.about .expert {
   width: 100%;
   background: unset;
+}
+@media screen and (max-width: 950px) {
+  .about {
+    min-width: 100% !important;
+  }
+  .main {
+    width: 90vw;
+  }
 }
 /* ========== about sction end ============================= */
 /* ===================== skill section ======================= */
 
 /* ===================== skill section end ======================= */
+/* ===================== projects section ======================= */
+.prg-main {
+  width: 68%;
+  height: auto;
+  margin: 0rem auto;
+}
+.prg-main .projects-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.prg-main p {
+  padding: 2rem 0 0 0;
+}
+.prg-main .project {
+  width: 45%;
+  height: 30%;
+}
+.main-wrapper::-webkit-scrollbar {
+  display: none;
+}
+/* ===================== projects section end ======================= */
+/* ===================== contect section ======================= */
+.contect {
+  background: var(--bg-light);
+  width: 68%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--text-primary) !important;
+  padding: 1rem 2rem;
+}
+
+.contect-container {
+  background: var(--text-theme);
+  padding: 1rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 1rem;
+}
+.input-group input {
+  outline: none;
+  padding: 1.5rem 2rem;
+  background: var(--bg-primary);
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  font-family:var(--font-family);
+}
+.contect-container button{
+  background: var(--text-scondry);
+  width: 100%;
+  color: white;
+}
+.txt{
+  width: 100%;
+}
+.input-group textarea{
+  width: 100%;
+  height: 15rem;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  outline: none;
+}
+@media screen and (max-width:950px) {
+  .contect{
+    width: 100%;
+  }
+}
+/* ===================== contect section end ======================= */
+/* ===================== features section  ======================= */
+.i-do{
+  background: var(--bg-light);
+  padding: 1rem 2rem;
+  width: 68%;
+  border-radius: 1rem;
+}
+/* ===================== features section end ======================= */
