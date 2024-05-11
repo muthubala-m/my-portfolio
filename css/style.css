@@ -15,7 +15,7 @@
 :root {
   --bg-primary: #fdf8fe;
   --bg-light: white;
-  --bg-gradient: radial-gradient(at center top, #fdf8fe, #a7b3f5);
+  --bg-gradient: radial-gradient(at center top, #fbe6ff, #b9c2f3);
   --bg--dark: black;
   --font-size: 10px;
   --text-primary: #000000;
@@ -79,9 +79,6 @@ body {
   flex-direction: column;
   align-items: center;
   color: var(--text-primary);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 /* =============== body end ========================= */
 
@@ -559,14 +556,20 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
-#mobile-theme{
+.mobile-nav-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#mobile-theme {
   font-size: 3rem;
 }
 
 #close-btn {
   position: absolute;
   right: 2rem;
-  font-size: 3rem ;
+  font-size: 3rem;
   cursor: pointer;
   top: 1rem;
 }
@@ -575,3 +578,70 @@ body {
   transition: all 0.3s;
 }
 /* ========= mobile navigation bar end========== */
+/* ========== main wrapper ========================== */
+.main-wrapper {
+  height: 100%;
+  width: 80vw;
+  overflow-x: hidden;
+}
+.main-wrapper .main-container {
+  width: 100%;
+  display: flex;
+  transition: all 0.3s;
+  gap: 30px;
+}
+.main-container .main {
+  min-width: 100%;
+}
+@media screen and (max-width: 750px) {
+  .main-wrapper {
+    width: 90vw;
+  }
+}
+/* ========== main wrapper end========================== */
+/* ========== about sction ============================= */
+.about {
+  width: 68%;
+  background: var(--bg-light);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+.about-head {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-head div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-head div:nth-of-type(1) button {
+  color: var(--text-scondry);
+}
+.about-exps{
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+}
+.about-exp{
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background:var(--text-theme);
+  border-radius: 1rem;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+}
+.about-exp h2{
+  color: var(--text-scondry);
+}
+.about .expert{
+  width: 100%;
+  background: unset;
+}
+/* ========== about sction end ============================= */
+/* ===================== skill section ======================= */
+
+/* ===================== skill section end ======================= */

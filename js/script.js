@@ -31,10 +31,20 @@ navItems.forEach((navItem) => {
           event.target.parentElement.parentElement.innerText == item.innerText
         ) {
           item.classList.add("nav-active");
+          const main = document.querySelector(".main");
+          const mainContainer = document.querySelector(".main-container");
+          const width = main.clientWidth + 30;
+          const id = Number(item.getAttribute("id-num"));
+          mainContainer.style.transform = `translateX(-${id * width}px)`;
         }
       }
       if (event.target.innerText == item.innerText) {
         item.classList.add("nav-active");
+        const main = document.querySelector(".main");
+        const mainContainer = document.querySelector(".main-container");
+        const width = main.clientWidth + 30;
+        const id = Number(item.getAttribute("id-num"));
+        mainContainer.style.transform = `translateX(-${id * width}px)`;
       }
     });
   });
