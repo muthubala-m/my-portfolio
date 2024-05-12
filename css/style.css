@@ -713,7 +713,7 @@ body {
   border-radius: 1rem;
   font-family: var(--font-family);
 }
-input::placeholder{
+input::placeholder {
   font-size: 1.2rem;
 }
 .contect-container button {
@@ -742,7 +742,7 @@ input::placeholder{
   .contect {
     width: 100%;
   }
-  .exp-con{
+  .exp-con {
     width: 100% !important;
   }
 }
@@ -754,14 +754,19 @@ input::placeholder{
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 2rem;
+  height: auto;
   border-radius: 1rem;
+}
+.about{
+  height: auto;
 }
 .infos-wrapper {
   display: flex;
   gap: 5rem;
+  flex-wrap: wrap;
 }
 .info {
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -778,22 +783,30 @@ input::placeholder{
 }
 .info-list li {
   width: 45%;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   background: var(--text-scondry);
   color: var(--text-theme);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: flex;
   cursor: pointer;
   align-items: center;
   justify-content: center;
 }
-.edu{
+.edu {
   height: 100%;
   flex-direction: column;
   justify-content: space-around;
 }
-.edu li{
+.edu li {
   width: 100%;
-  padding:1rem 3rem;
+  padding: 1rem 3rem;
+}
+@media screen and (max-width: 550px) {
+  .infos-wrapper {
+    flex-direction: column;
+  }
+  .info {
+    width: 100% !important;
+  }
 }
 /* ====================== info section end ================ */
